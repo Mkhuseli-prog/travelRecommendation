@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVEL AGENCY</title>
+    <link rel="stylesheet" href="travel_recommendation.css">
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo-container">
+            <!-- Replace 'logo.png' with your actual logo file name -->
+            <a href="index.html">
+                <img src="_Black And Blue Modern Typography Travel Agency Logo.png" alt="TravelBloom Logo" class="site-logo">
+            </a>
+            <span class="site-title">TRAVEL AGENCY</span>
+        </div>
+    
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+    
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Enter a destination or keyword">
+            <button class="btn-search" onclick="searchCondition()">Search</button>
+            <button class="btn-clear" onclick="resetForm()">Clear</button>
+        </div>
+    </nav>
+    
+
+    <main class="hero">
+        <div class="social-sidebar">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <div class="hero-content">
+            <h1>EXPLORE DREAM<br>DESTINATION</h1>
+            <p>The Travel Recommendation App helps users explore popular travel destinations through an interactive and
+                user-friendly interface...</p>
+            <button class="btn-book">Book Now</button>
+        </div>
+        <div id="results" class="results-container"></div>
+
+    </main>
+    <script src="travel_recommendation.js"></script>
+
+</body>
+
+</html>
